@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #2C3E50;
+    padding: 1em 0;
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 1.5em;
+}
+
+.navbar .nav-links a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+.navbar .nav-links a:hover,
+.navbar .nav-links a .active {
+    color: #fff;
+}
+
+.hero {
+    background: url("../img/download\ \(1\).jpeg ") no-repeat center center/cover fixed;
+    padding: 5em 0;
+    color: #D4AF37;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #FAF3E0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #white;
+}
+
+.about, .menu, .contact, .testimonials {
+    padding: 3em 0;
+}
+
+.about h1,
+.menu h1,
+.contact h1,
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: maroon;
+}
+
+.testimonials {
+    background-color: #f9f9f9;
+
+}
+
+.testimonials .testimonial {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border-left: 5px solid blue;
+    background-color: #fff;
+}
+
+.testimonials .testimonial p {
+    font-style: italic;
+}
+
+.testimonials .testimonial span {
+    display: block;
+    margin-top: 0.5em;
+    font-weight: bold;
+    text-align: right;
+    color: #555;
+}
+
+.menu-section {
+    margin-bottom: 2em;
+}
+
+.menu-section h2 {
+    border-bottom: 2px solid maroon;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    color: maroon;
+}
+
+.menu-section ul {
+    list-style: none;
+}
+
+.menu-section li {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-section li:last-child {
+    border-bottom: none;
+}
+
+.menu-section .dish {
+    font-weight: bold;
+}
+
+.menu-section .price {
+    float: right;
+    color: maroon;
+}
+
+.contact-details {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: maroon;
+    color:#fff;
+    border: none;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3 ease;
+}
+
+.contact-form button:hover {
+    background-color: #a52a2a;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .navbar .nav-links li {
+        margin: 0.5em 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
